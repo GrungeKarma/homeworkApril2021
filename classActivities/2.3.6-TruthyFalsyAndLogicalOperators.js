@@ -21,7 +21,10 @@ console.log((age >= 10) ? "full menu" : "kids menu");
 //  TO DO: using only logical operators (no comparison operators), write an if statement that prints "The number is zero" when num is 0.
 let num = 0;
 // * your if statement here *
-if (true){
-    num && 0;
-    console.log("the number is zero");
+// TO DO: using only logical operators (No Comparison Operators),
+// write an if statement that prints "The number is zero" when num is 0.
+if (!num) {
+  console.log(`The number is zero`);
 }
+// OR... new way to write condition
+!num ? null : console.log(`The number is zero`);
