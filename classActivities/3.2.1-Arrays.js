@@ -11,7 +11,7 @@
 //console.log(stores[7]);
 // with for...of, loop over the Array, modify the value and add to a different Array
 numbers = [5, 6, 2,];
-for (number of numbers){
+for (let number of numbers){
   console.log(number + 1);
   console.log(number);
 }
