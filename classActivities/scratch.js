@@ -11,3 +11,4 @@ const myObject = {
 myObject.x; // accessed the 'x' key
 myObject[x]; // accessed the 'somethingElse' key
 myObject["x"]; // accessed the 'x' key
+hello
