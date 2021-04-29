@@ -12,8 +12,11 @@ p{
 #serious {
     color: salmon
 }
-li {
+ul {
     color: firebrick
     margin: 22px, 44px dotted red;
+    
+}
+h2 {
     
 }
