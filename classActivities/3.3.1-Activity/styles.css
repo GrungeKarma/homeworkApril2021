@@ -1,0 +1,19 @@
+h1 {
+    color: crimson;
+
+}
+body {
+    background-color: black;
+}
+p{
+    color: darkred;
+}
+
+#serious {
+    color: salmon
+}
+li {
+    color: firebrick
+    margin: 22px, 44px dotted red;
+    
+}
