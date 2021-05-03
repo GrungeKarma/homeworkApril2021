@@ -12,10 +12,11 @@ let pizzaToppings = [
 
 greetCustomer = name => {
   for (let i = 0; i < pizzaToppings.length; i++) {
-    console.log(`Welcome to Tony's Pizza House ${name}, our toppings are:`);
     let lastTopping = pizzaToppings.pop();
     let listToppings = pizzaToppings.toString();
-    console.log(listToppings + `, and` + lastTopping);
+    console.log(
+      `Welcome to Tony's Pizza House ${name}, our toppings are:${listToppings} and ${lastTopping}`
+    );
     return pizzaToppings[i];
   }
 };
