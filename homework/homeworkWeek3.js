@@ -13,21 +13,27 @@ let pizzaToppings = [
 greetCustomer = name => {
   for (let i = 0; i < pizzaToppings.length; i++) {
     console.log(`Welcome to Tony's Pizza House ${name}, our toppings are:`);
+    let lastTopping = pizzaToppings.pop();
     let listToppings = pizzaToppings.toString();
-    console.log(listToppings);
+    console.log(listToppings + `, and` + lastTopping);
     return pizzaToppings[i];
   }
 };
 greetCustomer("Jerry");
 
 getPizzaOrder = (size, crust, ...toppings) => {
-  console.log(
-    `One ${size}${crust} crust pizza with ${toppings} coming right up!.`
-  );
+  console.log(toppings);
+  if (toppings.length <= 0) {
+    console.log(`One ${size}${crust} crust cheese pizza coming right up!`);
+  } else {
+    console.log(
+      `One ${size}${crust} crust pizza with ${toppings} coming right up!.`
+    );
+  }
   return (toppingArr = [size, crust, toppings]);
 };
 
-getPizzaOrder(" large", " thin", " pepperoni", " sausage");
+getPizzaOrder(" large", " thin");
 
 preparePizza = toppingArr => {
   console.log(`###Cooking Pizza###`);
@@ -41,10 +47,18 @@ preparePizza = toppingArr => {
 preparePizza(toppingArr);
 
 servePizza = pizza => {
-  console.log(
-    `Order up! Here's your${pizza.size}${
-      pizza.crust
-    } crust pizza with${pizza.toppings.toString()}`
-  );
+  if (pizza.toppings.length <= 0) {
+    console.log(
+      `Order up! Here's your${pizza.size}${pizza.crust} crust cheese pizza!`
+    );
+  } else {
+    console.log(
+      `Order up! Here's your${pizza.size}${pizza.crust} crust pizza with`
+    );
+
+    let lastTopping = pizzaToppings.pop();
+    let listToppings = pizzaToppings.toString();
+    console.log(listToppings + `, and` + lastTopping);
+  }
 };
 servePizza(pizza);
