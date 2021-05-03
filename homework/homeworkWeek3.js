@@ -22,7 +22,6 @@ greetCustomer = name => {
 greetCustomer("Jerry");
 
 getPizzaOrder = (size, crust, ...toppings) => {
-  console.log(toppings);
   if (toppings.length <= 0) {
     console.log(`One ${size}${crust} crust cheese pizza coming right up!`);
   } else {
