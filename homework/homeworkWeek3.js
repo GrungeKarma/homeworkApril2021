@@ -46,8 +46,6 @@ getPizzaOrder = (size, crust, ...toppings) => {
 };
 
 getPizzaOrder(" large", " thin", " ham", " bacon");
-console.log(toppingArr);
-
 preparePizza = toppingArr => {
   console.log(`###Cooking Pizza###`);
   let order = {
