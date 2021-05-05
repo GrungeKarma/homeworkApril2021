@@ -47,9 +47,9 @@ getPizzaOrder = (size, crust, ...toppings) => {
   }
 };
 
-// function that processes the order parameters and kills the process if the order toppings do not match the master list
+// function that processes the order parameters and kills the process if the order toppings that do not match the master list
 
-getPizzaOrder(" large", " thin", " ham");
+getPizzaOrder(" large", " thin", " pepperoni", " ham", " feta" );
 preparePizza = toppingArr => {
   console.log(`###Cooking Pizza###`);
   let order = {
@@ -75,9 +75,9 @@ servePizza = pizza => {
     );
 
     let singleTopping = pizza.toppings.toString();
-
     let lastTopping = pizza.toppings.pop();
     let listToppings = pizza.toppings.toString();
+
     if (pizza.toppings.length <= 0) {
       console.log(singleTopping);
     } else {
