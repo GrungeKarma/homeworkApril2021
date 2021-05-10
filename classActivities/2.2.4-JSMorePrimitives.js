@@ -2,7 +2,7 @@
 // each variable should reference a different primitive data type
 // ! REMEMBER: you should never DELIBERATELY assign "undefined" to a variable
 
-const name = "Anthony";
+const name = 'Anthony';
 let age = 30;
 let happy = true;
 let student = null;
@@ -24,10 +24,9 @@ console.log(typeof mindPowers);
 let aboutMe = `My name is ${name} and I am ${age} years old`;
 console.log(aboutMe);
 
-
 // reassign the value of the variable that references "null"
 
-student = "hopefully not for long";
+student = 'hopefully not for long';
 
 // print the value and its type
 
