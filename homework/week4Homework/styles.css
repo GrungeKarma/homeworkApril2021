@@ -3,9 +3,9 @@
   margin: 0%;
   padding: 0%;
   background-color: #711A1A;
-  color:lightslategrey;
+  color: lightslategrey;
   font-size: 30px;
-  font-family: 'Fredericka the Great', cursive;
+  font-family: "Fredericka the Great", cursive;
 }
 .navBarContainer {
   display: flex;
