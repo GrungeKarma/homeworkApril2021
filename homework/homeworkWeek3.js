@@ -34,6 +34,7 @@ getPizzaOrder = (size, crust, ...toppings) => {
     " feta",
     " bacon"
   ];
+
   let test = toppings.every(element => toppingMaster.includes(element));
   if (test === true) {
     if (toppings.length <= 0) {
@@ -47,15 +48,17 @@ getPizzaOrder = (size, crust, ...toppings) => {
 >>>>>>> development
   } else {
     console.log(
-      `We do not offer one or more of the toppings you requested. Please try again`
+      "🤷 " +
+        `We do not offer one or more of the toppings you requested. Please try again.` +
+        " 🤷"
     );
     process.exit();
   }
 };
 
-// function that processes the order parameters and kills the process if the order toppings do not match the master list
+// function that processes the order parameters and kills the process if the order toppings that do not match the master list
 
-getPizzaOrder(" large", " thin", " ham");
+getPizzaOrder(" large", " thin", " pepperoni", " ham", " poop");
 preparePizza = toppingArr => {
   console.log(`###Cooking Pizza###`);
   let order = {
@@ -81,9 +84,9 @@ servePizza = pizza => {
     );
 
     let singleTopping = pizza.toppings.toString();
-
     let lastTopping = pizza.toppings.pop();
     let listToppings = pizza.toppings.toString();
+
     if (pizza.toppings.length <= 0) {
       console.log(singleTopping);
     } else {
