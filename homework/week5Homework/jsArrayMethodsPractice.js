@@ -236,13 +236,13 @@ let data = [
 
 //create and print a list of phone numbers
 let phoneNumber = data.filter(number => {
-  console.log(`user: ${number.username}  phone number: ${number.phone}.`);
+  console.log(`user: ${number.username},  phone number: ${number.phone}.`);
 });
 
 //create and print a list of website and email pairs (pair them in a string, array, or object)
 let webEmail = data.filter(contact => {
   console.log(
-    `user: ${contact.username} email: ${contact.email} website: ${contact.website}`
+    `user: ${contact.username}, email: ${contact.email}, website: ${contact.website}`
   );
 });
 
