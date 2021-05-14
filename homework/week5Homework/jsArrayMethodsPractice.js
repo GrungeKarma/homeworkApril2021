@@ -2214,4 +2214,5 @@ let result = postArr5.reduce(function(result, field, index) {
   result[postTitleArr[index]] = field;
   return result;
 }, {});
+console.log(`Here are the titles and posts together:`);
 console.log(result);
